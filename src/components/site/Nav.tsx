@@ -63,9 +63,15 @@ export function Nav({ variant = "auto" }: { variant?: "auto" | "navy" | "cream" 
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="font-serif text-lg hover:opacity-70 transition">
-              {l.label}
-            </a>
+            l.href.startsWith("/#") ? (
+              <a key={l.href} href={l.href} className="font-serif text-lg hover:opacity-70 transition">
+                {l.label}
+              </a>
+            ) : (
+              <Link key={l.href} to={l.href} className="font-serif text-lg hover:opacity-70 transition">
+                {l.label}
+              </Link>
+            )
           ))}
           {/* <a href="/#contact" className={isNavy ? "gold-pill" : "navy-pill"}>
             Say Hello
@@ -110,14 +116,25 @@ export function Nav({ variant = "auto" }: { variant?: "auto" | "navy" | "cream" 
         <nav className="flex-1 flex flex-col px-8 py-10 gap-6">
           <div className="label-eyebrow text-cream/50 mb-2">Menu</div>
           {links.map((l) => (
-            <a 
-              key={l.href} 
-              href={l.href} 
-              onClick={() => setMobileMenuOpen(false)}
-              className="display-serif text-3xl hover:text-gold transition"
-            >
-              {l.label}
-            </a>
+            l.href.startsWith("/#") ? (
+              <a 
+                key={l.href} 
+                href={l.href} 
+                onClick={() => setMobileMenuOpen(false)}
+                className="display-serif text-3xl hover:text-gold transition"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link 
+                key={l.href} 
+                to={l.href} 
+                onClick={() => setMobileMenuOpen(false)}
+                className="display-serif text-3xl hover:text-gold transition"
+              >
+                {l.label}
+              </Link>
+            )
           ))}
           <div className="hairline mt-4 border-cream/10"></div>
           <a 
