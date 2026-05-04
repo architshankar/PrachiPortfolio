@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Happy birthday 
 
-TODO: Document your project here
+This Portfolio/blogging website is a git from Archit Shankar
