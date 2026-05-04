@@ -1,0 +1,130 @@
+export const profile = {
+  name: "Prachi Shankar",
+  initials: "P",
+  shortName: "Prachi.",
+  headline: "SIBM Pune · IIIT Allahabad · Author",
+  location: "India",
+  email: "prachi.shankar@example.com",
+  city: "Pune, India",
+  followers: "2,339",
+  connections: "500+",
+  socials: {
+    linkedin: { handle: "in/prachi-shankar", url: "https://www.linkedin.com/in/prachi-shankar-82a505144/" },
+    instagram: { handle: "@prachi.writes", url: "https://www.instagram.com/prachishankar78?igsh=OW5zNWxoaTlteHVv" },
+    
+  },
+  currently: ["MBA · SIBM Pune", "Analyst · Accenture"],
+  upcomingBook: {
+    title: "Good but Never Good Enough",
+    status: "Releasing soon",
+    blurb:
+      "A book about almost. About being the kind of person who tries hard, comes close, and is told they did very well — even when they fell short of the goal that defined them.",
+    label: "A Memoir",
+    author: "P. Shankar",
+  },
+  about: {
+    quote:
+      " Engineer by training. Civil servant by pursuit. MBA by choice.Author by calling. Born in Lucknow, now finding my place at the intersection of words, leadership, and impact. ",
+    paragraphs: [
+      "I completed my undergraduate degree at IIIT Allahabad with a 9.03 GPA, after which I worked as a Hardware Engineer at Siemens EDA. Driven by a deep interest in public service and diplomacy, I appeared for the UPSC Civil Services Examination — clearing the Mains twice and reaching the Interview stage across three attempts.",
+      "That journey shaped me in ways a classroom never could. I chose to pivot toward management and am now pursuing my MBA at SIBM Pune, where I work with the Research and Scholastic Development Team mentoring aspiring students, and currently serve as a Management Consulting Analyst at Accenture.",
+      "Beyond work, I am a reader and writer at heart. I have co-authored three anthologies — two poetry, one story — and am working on my first solo book, Good but Never Good Enough. When I'm not writing, you'll find me doing K-pop choreography or lifting weights.",
+    ],
+    stats: [
+      { value: "9.03", label: "B.Tech GPA" },
+      { value: "2", label: "Books co-authored" },
+      { value: "2,339", label: "Followers" },
+      { value: "500+", label: "Connections" },
+    ],
+  },
+  education: [
+    {
+      school: "Symbiosis Institute of Business Management",
+      sub: "SIBM Pune",
+      degree: "Master of Business Administration",
+      period: "Jun 2025 — Present",
+      note: "Currently pursuing MBA with focus on strategy and consulting.",
+    },
+    {
+      school: "Indian Institute of Information Technology, Allahabad",
+      sub: "IIIT Allahabad",
+      degree: "B.Tech",
+      period: "2016 — 2020",
+      note: "GPA: 9.03 / 10",
+    },
+    {
+      school: "Notre Dame Academy",
+      sub: "CBSE",
+      degree: "Senior Secondary School — Class XII",
+      period: "",
+      note: "95%",
+    },
+    {
+      school: "Cathedral Sr Sec School",
+      sub: "CBSE",
+      degree: "Primary & Secondary — Class X",
+      period: "",
+      note: "10 CGPA",
+    },
+  ],
+  certifications: [
+    { title: "Learning Data Analytics: 1 Foundations", source: "LinkedIn · Jun 2025" },
+    { title: "Excel: Tracking Data Easily and Efficiently", source: "LinkedIn · Jun 2025" },
+  ],
+  experience: [
+    {
+      role: "Management Consulting Analyst",
+      org: "Accenture Strategy & Consulting",
+      period: "Apr 2026 — Present",
+      location: "Pune, Maharashtra",
+    },
+    {
+      role: "Senior Team Member · Research and Scholastic Development",
+      org: "SIBM Pune",
+      period: "Mar 2026 — Present",
+      location: "Pune, Maharashtra",
+    },
+    {
+      role: "Interim Team Member · Aspirant Relations",
+      org: "SIBM Pune",
+      period: "Jul 2025 — Sep 2025",
+      location: "Pune, Maharashtra",
+    },
+    {
+      role: "Hardware Engineer (Internship)",
+      org: "Siemens EDA",
+      period: "Jan 2020 — Jun 2020",
+      location: "Noida, Uttar Pradesh",
+    },
+    {
+      role: "Internshala Student Partner",
+      org: "Freelance",
+      period: "Aug 2017 — Aug 2018",
+      location: "Remote",
+    },
+  ],
+  honors: [
+    { title: "Co-author · Surreal Moments", sub: "Poetry Anthology · Story Mirror", date: "Feb 2023" },
+    { title: "Co-author · Under the Moonlit Sky", sub: "Story Anthology · Story Mirror", date: "Sep 2022" },
+    { title: "Best Speaker — Govt. Panel", sub: "Parliamentary Debate, SIBM Pune", date: "" },
+    { title: "Best Speaker — Audience Choice", sub: "Parliamentary Debate, SIBM Pune", date: "" },
+  ],
+  volunteering: [
+    { role: "Vice Chair, Student Branch", org: "IEEE Women in Engineering, IIIT Allahabad", period: "Aug 2019 — Aug 2020", category: "Science & Technology" },
+    { role: "Publicity Committee Head", org: "IEEE CSIS, IIIT Allahabad", period: "Aug 2017 — Aug 2018", category: "Science & Technology" },
+    { role: "Member", org: "Tesla, IIIT Allahabad", period: "", category: "Technology" },
+    { role: "Educator", org: "Prayaas IIITA", period: "Aug 2016 — Aug 2019", category: "Poverty Alleviation" },
+    { role: "Volunteer", org: "Sarasva Literary Society, IIIT Allahabad", period: "Aug 2016 — Dec 2017", category: "Education", note: "Contributed articles to the college magazine, organised cultural fests including Effervescence, and supported content for TEDxIIITA." },
+    { role: "Dramatics Society Member", org: "Rangtarangini, IIIT Allahabad", period: "Aug 2016 — Aug 2018", category: "Arts" },
+  ],
+  skills: [
+    "Human Resources (HR)",
+    "Talent Management",
+    "Data Analytics",
+    "Microsoft Excel",
+    "Strategy & Consulting",
+    "Public Speaking",
+    "Creative Writing",
+    "Research",
+  ],
+};
