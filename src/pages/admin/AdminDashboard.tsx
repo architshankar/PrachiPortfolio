@@ -18,11 +18,13 @@ export default function AdminDashboard() {
   };
 
   useEffect(() => {
-    if (!adminAuth.isAuthed()) {
-      navigate("/admin/login");
-      return;
-    }
-    loadPosts();
+    adminAuth.checkSession().then((isAuthed) => {
+      if (!isAuthed) {
+        navigate("/admin/login");
+        return;
+      }
+      loadPosts();
+    });
   }, [navigate]);
 
   const onDelete = async (id: string, title: string) => {
@@ -58,7 +60,7 @@ export default function AdminDashboard() {
             <span className="font-serif text-2xl">Admin</span>
           </div>
           <button
-            onClick={() => { adminAuth.logout(); navigate("/admin/login"); }}
+            onClick={async () => { await adminAuth.logout(); navigate("/admin/login"); }}
             className="label-eyebrow flex items-center gap-2 hover:text-gold"
           >
             <LogOut size={14} /> Logout

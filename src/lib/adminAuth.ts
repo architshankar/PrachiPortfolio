@@ -1,26 +1,22 @@
-// NOTE: This is a client-only password gate. It is NOT real security —
-// the password lives in the bundle and anyone with browser dev tools can read it.
-// Since we're using localStorage-only mode, this is the best we can do client-side.
-// To get real protection, enable Lovable Cloud and store the password as a secret.
 
-const PASSWORD = "prachi2026";
-const SESSION_KEY = "prachi-admin-session";
+import { supabase } from "./supabase";
 
 export const adminAuth = {
-  login(password: string): boolean {
-    if (password === PASSWORD) {
-      sessionStorage.setItem(SESSION_KEY, "ok");
-      return true;
+  async login(email: string, password: string): Promise<{ error: string | null }> {
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    if (error) {
+      return { error: error.message };
     }
-    return false;
+    return { error: null };
   },
-  isAuthed(): boolean {
-    if (typeof window === "undefined") return false;
-    return sessionStorage.getItem(SESSION_KEY) === "ok";
+  async checkSession(): Promise<boolean> {
+    const { data: { session } } = await supabase.auth.getSession();
+    return !!session;
   },
-  logout() {
-    sessionStorage.removeItem(SESSION_KEY);
+  async logout() {
+    await supabase.auth.signOut();
   },
 };
-
-export const ADMIN_PASSWORD_HINT = PASSWORD; // dev-only, to surface to user

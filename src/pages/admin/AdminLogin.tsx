@@ -5,16 +5,22 @@ import { toast } from "sonner";
 import { Lock } from "lucide-react";
 
 export default function AdminLogin() {
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (adminAuth.login(password)) {
+    setLoading(true);
+    const { error } = await adminAuth.login(email, password);
+    setLoading(false);
+    
+    if (!error) {
       toast.success("Welcome back, Prachi.");
       navigate("/admin");
     } else {
-      toast.error("Wrong password");
+      toast.error(error);
     }
   };
 
@@ -28,20 +34,28 @@ export default function AdminLogin() {
         <h1 className="display-serif text-5xl mt-3 mb-10">
           Welcome<br /><span className="italic-accent">back.</span>
         </h1>
+        
+        <label className="label-eyebrow text-cream/55 block mb-2">Email</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="w-full bg-transparent border-b border-cream/30 focus:border-gold outline-none py-3 font-serif text-2xl mb-6"
+          autoFocus
+          required
+        />
+
         <label className="label-eyebrow text-cream/55 block mb-2">Password</label>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="w-full bg-transparent border-b border-cream/30 focus:border-gold outline-none py-3 font-serif text-2xl"
-          autoFocus
+          required
         />
-        <button type="submit" className="gold-pill mt-10 w-full">
-          Enter
+        <button type="submit" disabled={loading} className="gold-pill mt-10 w-full disabled:opacity-50">
+          {loading ? "Verifying..." : "Enter"}
         </button>
-        <p className="text-cream/40 text-xs mt-8 leading-relaxed">
-          Note: This is a client-side password gate stored in the bundle. For real protection, enable Lovable Cloud and store the password as a secret.
-        </p>
       </form>
     </div>
   );

@@ -36,23 +36,25 @@ export default function AdminEditor() {
   const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    if (!adminAuth.isAuthed()) {
-      navigate("/admin/login");
-      return;
-    }
-    
-    async function load() {
-      if (id) {
-        // Find existing post by ID
-        const all = await getAllPosts(false);
+    adminAuth.checkSession().then((isAuthed) => {
+      if (!isAuthed) {
+        navigate("/admin/login");
+        return;
+      }
+      
+      async function load() {
+        if (id) {
+          // Find existing post by ID
+          const all = await getAllPosts(false);
         const existing = all.find(p => p.id === id);
         if (existing) {
           setPost(existing);
           setSlugTouched(true);
         }
       }
-    }
-    load();
+      }
+      load();
+    });
   }, [id, navigate]);
 
   const update = (patch: Partial<Post>) => setPost((p) => ({ ...p, ...patch }));
