@@ -28,7 +28,7 @@ export function Books() {
           <div className="relative max-w-sm lg:max-w-md mx-auto w-full flex justify-center items-center">
             
             <img
-              src="/images/coverBook1.png"
+              src="/images/coverBook.png"
               alt={profile.upcomingBook.title}
               className="w-full h-auto object-contain shadow-2xl transition-transform duration-500 hover:scale-[1.02] rotate-[-3deg] hover:rotate-[-1deg]"
             />

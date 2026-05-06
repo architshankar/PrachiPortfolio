@@ -4,13 +4,13 @@ export const profile = {
   shortName: "Prachi.",
   headline: "SIBM Pune · IIIT Allahabad · Author",
   location: "India",
-  email: "prachi.shankar@example.com",
+  email: "PrachiShankar.destiny@gmail.com",
   city: "Pune, India",
   followers: "2,339",
   connections: "500+",
   socials: {
     linkedin: { handle: "in/prachi-shankar", url: "https://www.linkedin.com/in/prachi-shankar-82a505144/" },
-    instagram: { handle: "@prachi.writes", url: "https://www.instagram.com/prachishankar78?igsh=OW5zNWxoaTlteHVv" },
+    instagram: { handle: "@prachishankar78", url: "https://www.instagram.com/prachishankar78?igsh=OW5zNWxoaTlteHVv" },
     
   },
   currently: ["MBA · SIBM Pune", "Analyst · Accenture"],

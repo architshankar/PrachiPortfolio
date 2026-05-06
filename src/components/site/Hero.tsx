@@ -278,7 +278,7 @@ export function Hero() {
           style={{ transform: `translateY(${scrollY * 0.15}px)` }}
         >
           <img
-            src="/LandingPageMasked.png"
+            src="/LandingPageMasked1.png"
             alt="Prachi Shankar"
             className="w-full h-full object-contain object-bottom drop-shadow-2xl"
             style={{ filter: "drop-shadow(0px -8px 20px rgba(0, 0, 0, 0.1))" }}
@@ -369,7 +369,7 @@ export function Hero() {
           style={{ transform: `translate(-50%, ${scrollY * 0.15}px)` }}
         >
           <img
-            src="/LandingPageMasked.png"
+            src="/LandingPageMasked1.png"
             alt="Prachi Shankar"
             className="w-full h-auto max-h-[85vh] object-contain object-bottom drop-shadow-2xl"
             style={{ filter: "drop-shadow(0px -8px 20px rgba(0, 0, 0, 0.15))" }}
