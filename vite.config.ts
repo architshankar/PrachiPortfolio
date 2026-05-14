@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     Sitemap({
-      hostname: "https://prachishankar.in/", // Replace with actual domain later or use as default
+      hostname: "https://prachishankar.in", // Replace with actual domain later or use as default
       dynamicRoutes: [
         "/",
         "/blog"
