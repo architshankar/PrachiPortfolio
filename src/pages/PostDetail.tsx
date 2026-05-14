@@ -5,6 +5,7 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import DOMPurify from "dompurify";
+import { SEO } from "@/components/SEO";
 
 function formatDate(ts: number) {
   return new Date(ts).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
@@ -50,6 +51,10 @@ export default function PostDetail() {
   if (post.type === "linked") {
     return (
       <div className="min-h-screen bg-cream">
+        <SEO 
+          title={`${post.title} | Prachi Shankar`} 
+          description={post.excerpt} 
+        />
         <Nav variant="cream" />
         <main className="pt-32 pb-28">
           <div className="mx-auto max-w-3xl px-6 md:px-10">
@@ -76,6 +81,12 @@ export default function PostDetail() {
 
   return (
     <div className="min-h-screen bg-cream">
+      <SEO 
+        title={`${post.title} | Prachi Shankar`} 
+        description={post.excerpt} 
+        image={post.coverImage || undefined}
+        type="article"
+      />
       <Nav variant="cream" />
       <main className="pt-32 pb-28">
         <div className="mx-auto max-w-3xl px-6 md:px-10">

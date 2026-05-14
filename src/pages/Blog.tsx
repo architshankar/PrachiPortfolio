@@ -5,6 +5,7 @@ import { Footer } from "@/components/site/Footer";
 import { PostCard } from "@/components/blog/PostCard";
 import { FilterTabs } from "@/components/blog/FilterTabs";
 import { Search } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 export default function Blog() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -32,6 +33,10 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-cream">
+      <SEO 
+        title="Journal | Prachi Shankar" 
+        description="Essays, thoughts, and writings by Prachi Shankar." 
+      />
       <Nav />
       <main className="pt-32 pb-28">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10">
