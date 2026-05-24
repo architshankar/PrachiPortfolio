@@ -48,7 +48,7 @@ export function Hero() {
           </div>
           <div className="flex flex-col">
             <span className="text-cream/60">Management</span>
-            <span className="text-cream uppercase">Consultant Analyst</span>
+            <span className="text-cream uppercase">Consulting Analyst</span>
             <span className="text-cream uppercase"></span>
           </div>
           {/* <div className="flex flex-col">
@@ -107,7 +107,7 @@ export function Hero() {
           <div className="w-full max-w-[90vw] md:max-w-[85vw] flex justify-between items-end px-2 sm:px-6 md:px-12 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-cream mb-[-6vw] sm:mb-[-8vw] z-10 relative">
             <div className="flex flex-col text-left">
               <span className="text-cream/70 mb-1">Management</span>
-              <span className="text-cream uppercase">Consultant </span>
+              <span className="text-cream uppercase">Consulting </span>
               <span className="text-cream uppercase">Analyst</span>
             </div>
             <div className="flex flex-col text-left">
