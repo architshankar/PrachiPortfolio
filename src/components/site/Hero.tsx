@@ -48,8 +48,8 @@ export function Hero() {
           </div>
           <div className="flex flex-col">
             <span className="text-cream/60">Management</span>
-            <span className="text-cream uppercase">Consultant</span>
-            <span className="text-cream uppercase">Analyst</span>
+            <span className="text-cream uppercase">Consultant Analyst</span>
+            <span className="text-cream uppercase"></span>
           </div>
           {/* <div className="flex flex-col">
             <span className="text-cream/60">Since</span>
@@ -104,16 +104,17 @@ export function Hero() {
           style={{ transform: `translateY(calc(-15vh + ${scrollY * 0.9}px))` }}
         >
           {/* Top Floating Categories */}
-          <div className="w-full max-w-[90vw] md:max-w-[85vw] flex justify-between items-end px-2 sm:px-6 md:px-12 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-cream mb-[-5vw] sm:mb-[-4vw] z-10 relative">
+          <div className="w-full max-w-[90vw] md:max-w-[85vw] flex justify-between items-end px-2 sm:px-6 md:px-12 text-[10px] sm:text-xs md:text-sm font-semibold tracking-widest text-cream mb-[-6vw] sm:mb-[-8vw] z-10 relative">
+            <div className="flex flex-col text-left">
+              <span className="text-cream/70 mb-1">Management</span>
+              <span className="text-cream uppercase">Consultant </span>
+              <span className="text-cream uppercase">Analyst</span>
+            </div>
             <div className="flex flex-col text-left">
               <span className="text-cream/70 mb-1">Creative</span>
               <span className="text-cream uppercase">Writer</span>
             </div>
-            <div className="flex flex-col text-left">
-              <span className="text-cream/70 mb-1">Management</span>
-              <span className="text-cream uppercase">Consultant</span>
-              <span className="text-cream uppercase">Analyst</span>
-            </div>
+            
             {/* <div className="flex flex-col text-right">
               <span className="text-cream/70 mb-1">Since</span>
               <span className="text-cream uppercase">2016</span>
