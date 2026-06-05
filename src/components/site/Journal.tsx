@@ -40,7 +40,7 @@ export function Journal() {
           <div className="p-16 text-center text-navy/60">Loading essays...</div>
         ) : filtered.length === 0 ? (
           <div className="border border-dashed border-navy/20 p-16 text-center text-navy/60">
-            No essays yet — head to <Link to="/admin" className="underline">/admin</Link> to write the first one.
+            No essays yet ...
           </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-px bg-border">
