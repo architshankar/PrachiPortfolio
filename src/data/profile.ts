@@ -16,11 +16,12 @@ export const profile = {
   currently: ["MBA · SIBM Pune", "Analyst · Accenture"],
   upcomingBook: {
     title: "Good but Never Good Enough",
-    status: "Releasing soon",
+    status: "Available Now",
     blurb:
-      "A book about almost. About being the kind of person who tries hard, comes close, and is told they did very well — even when they fell short of the goal that defined them.",
+      "A book about almost. About being the kind of person who tries hard, comes close, and is told they did very well , even when they fell short of the goal that defined them.",
     label: "A Memoir",
     author: "P. Shankar",
+    amazonUrl: "https://amzn.in/d/0gWK3Zv2",
   },
   about: {
     quote:
