@@ -48,7 +48,12 @@ export function ReviewsCarousel() {
 
   return (
     <div className="mt-14">
-      <div className="label-eyebrow">Praise for the Book</div>
+      <h3 className="display-serif text-navy" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)" }}>
+        Read by <span className="italic-accent">Top Minds</span>
+      </h3>
+      <p className="text-navy/70 mt-3 max-w-xl">
+        Endorsed by leaders, bureaucrats, and risk-takers across policy, tech, and business.
+      </p>
 
       <div className="mt-6 relative">
         <div className="overflow-hidden" ref={emblaRef}>
@@ -58,8 +63,8 @@ export function ReviewsCarousel() {
               return (
                 <div key={r.name} className="min-w-0 shrink-0 grow-0 basis-full px-1">
                   <div className="bg-navy text-cream p-8 md:p-14 h-full">
-                    <div className="font-serif text-2xl md:text-3xl text-cream">{r.name}</div>
-                    <div className="label-eyebrow mt-2 text-gold">{r.credential}</div>
+                    <div className="display-serif text-3xl md:text-4xl text-gold">{r.name}</div>
+                    <div className="label-eyebrow mt-3 text-cream text-sm tracking-[0.15em]">{r.credential}</div>
 
                     <div className="hairline mt-6 mb-6 border-cream/20" />
 
