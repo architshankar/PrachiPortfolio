@@ -1,5 +1,6 @@
 
 import { profile } from "@/data/profile";
+import { ReviewsCarousel } from "@/components/site/ReviewsCarousel";
 
 export function Books() {
   // Hardcoded fallback link using your exact Amazon URL
@@ -62,6 +63,42 @@ export function Books() {
             </a>
           </div>
         </div>
+
+        <div className="mt-14">
+          <div className="label-eyebrow">Also Featured In</div>
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            {profile.contributorBooks.map((b) => (
+              <div key={b.title} className="bg-cream p-6 flex gap-5 items-start">
+                <img
+                  src={b.cover}
+                  alt={b.title}
+                  className="w-20 h-auto shadow-md flex-shrink-0"
+                />
+                <div>
+                  <div className="font-serif text-lg text-navy">{b.title}</div>
+                  <div className="text-navy/70 text-sm mt-1">
+                    {b.role} · {b.type}
+                  </div>
+                  <div className="label-eyebrow mt-2">
+                    {b.publisher} · {b.date}
+                  </div>
+                  {b.amazonUrl && (
+                    <a
+                      href={b.amazonUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block label-eyebrow text-gold mt-3 hover:text-navy transition-colors"
+                    >
+                      View on Amazon →
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <ReviewsCarousel />
 
         <div className="mt-14 grid md:grid-cols-2 gap-px bg-border">
           {profile.honors.map((h) => (
