@@ -10,7 +10,7 @@ export function Footer() {
         </div>
         <div className="text-right">
           <div className="label-eyebrow flex items-center justify-end gap-2">
-            © 2026 <img src="/images/sign.svg" alt="Prachi Shankar" className="h-4 inline filter invert opacity-70" /> — All words are mine.
+            © 2026 <img src="/images/sign.svg" alt="Prachi Shankar" className="h-4 inline filter invert opacity-70" /> .
           </div>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
