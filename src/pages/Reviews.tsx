@@ -9,7 +9,7 @@ import { profile } from "@/data/profile";
 
 // Reviews longer than this start collapsed with a "Read more" toggle.
 const COLLAPSE_AT = 420;
-const ENDORSEMENT = "Endorsement";
+const ENDORSEMENT = "Recommendation";
 
 interface DisplayReview {
   key: string;
@@ -151,7 +151,7 @@ export default function Reviews() {
                     filter === src ? "bg-navy text-cream border-navy" : "border-navy/30 text-navy"
                   }`}
                 >
-                  {src === ENDORSEMENT ? "Endorsements" : src}
+                  {src === ENDORSEMENT ? "Recommendations" : src}
                 </button>
               ))}
             </div>

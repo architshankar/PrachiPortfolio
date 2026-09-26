@@ -33,7 +33,7 @@ export function Contact() {
     <section id="contact" className="navy-section py-28">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid md:grid-cols-2 gap-16">
         <div>
-          <div className="label-eyebrow">08 · Contact</div>
+          <div className="label-eyebrow">07 · Contact</div>
           <h2 className="display-serif mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
             Let's build<br />something<br /><span className="italic-accent">honest.</span>
           </h2>
