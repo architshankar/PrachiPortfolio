@@ -40,7 +40,7 @@ export default function Blog() {
       <Nav />
       <main className="pt-32 pb-28">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-          <div className="label-eyebrow">All essays — Journal</div>
+          <div className="label-eyebrow">All essays · Journal</div>
           <h1 className="display-serif text-navy mt-4 mb-12" style={{ fontSize: "clamp(3rem, 7vw, 6rem)" }}>
             Things I've been<br /><span className="italic-accent">writing.</span>
           </h1>

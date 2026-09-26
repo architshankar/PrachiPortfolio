@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { type Post, getAllPosts, deletePost, togglePublish } from "@/lib/posts";
 import { adminAuth } from "@/lib/adminAuth";
-import { Plus, Edit, Trash2, Eye, EyeOff, LogOut, ArrowLeft } from "lucide-react";
+import { Plus, Edit, Trash2, Eye, EyeOff, LogOut, ArrowLeft, MessageSquareQuote } from "lucide-react";
 import { toast } from "sonner";
 
 export default function AdminDashboard() {
@@ -76,9 +76,14 @@ export default function AdminDashboard() {
               Your <span className="italic-accent">essays.</span>
             </h1>
           </div>
-          <Link to="/admin/new" className="navy-pill">
-            <Plus size={14} className="mr-1" /> New Post
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link to="/admin/reviews" className="label-eyebrow flex items-center gap-2 border border-navy/30 px-4 py-2.5 hover:bg-navy/5">
+              <MessageSquareQuote size={14} /> Reviews
+            </Link>
+            <Link to="/admin/new" className="navy-pill">
+              <Plus size={14} className="mr-1" /> New Post
+            </Link>
+          </div>
         </div>
 
         {loading ? (

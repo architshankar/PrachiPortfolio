@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { reviews } from "@/data/reviews";
 
 const CLAMP_CLASS = "line-clamp-6";
@@ -51,9 +52,14 @@ export function ReviewsCarousel() {
       <h3 className="display-serif text-navy" style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)" }}>
         Read by <span className="italic-accent">Top Minds</span>
       </h3>
-      <p className="text-navy/70 mt-3 max-w-xl">
-        Endorsed by leaders, bureaucrats, and risk-takers across policy, tech, and business.
-      </p>
+      <div className="mt-3 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <p className="text-navy/70 max-w-xl">
+          Endorsed by leaders, bureaucrats, and risk-takers across policy, tech, and business.
+        </p>
+        <Link to="/reviews" className="label-eyebrow text-gold hover:text-navy transition-colors shrink-0">
+          See all reviews →
+        </Link>
+      </div>
 
       <div className="mt-6 relative">
         <div className="overflow-hidden" ref={emblaRef}>

@@ -13,8 +13,8 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = "Prachi Shankar — Author of [Your Book Title], MBA, IIIT Allahabad",
-  description = "Personal site and official page of Prachi Shankar, author of [Your Book Title]. Explore her solo debut, writings, background as an MBA at SIBM Pune, Analyst at Accenture, and IIIT Allahabad alumna.",
+  title = "Prachi Shankar | Author of Good but Never Good Enough, MBA, IIIT Allahabad",
+  description = "Personal site and official page of Prachi Shankar, author of Good but Never Good Enough. Explore her solo debut, writings, background as an MBA at SIBM Pune, Analyst at Accenture, and IIIT Allahabad alumna.",
   type = "website",
   name = "Prachi Shankar",
   image = "https://zmazvdpanavvnfvgbtdq.supabase.co/storage/v1/object/sign/images/IMG-20260119-WA0010.jpg.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kZjRjOGM4MS1jOTcwLTQ5ZTAtOGM0NC03ZmEyM2JmM2E1ZDMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWFnZXMvSU1HLTIwMjYwMTE5LVdBMDAxMC5qcGcuanBlZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODEzNTI5OTUsImV4cCI6MzE1NTM4MTM1Mjk5NX0.YbdMH0SWxxKhjAdj57sj4jtzVY7vgpeRgGzYhD8sed0",

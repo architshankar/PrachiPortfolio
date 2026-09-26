@@ -26,7 +26,7 @@ export function Journal() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12 items-end">
           <div className="md:col-span-8">
-            <div className="label-eyebrow">05 — Journal</div>
+            <div className="label-eyebrow">07 · Journal</div>
             <h2 className="display-serif text-navy mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
               Observations & <span className="italic-accent">reflections.</span>
             </h2>

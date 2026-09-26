@@ -8,8 +8,9 @@ const signatureAnimation = {"v":"5.12.2","fr":29.9700012207031,"ip":0,"op":118.0
 
 const links = [
   { label: "About", href: "/#about" },
-  { label: "Journey", href: "/#journey" },
   { label: "Books", href: "/#books" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Journey", href: "/#journey" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];

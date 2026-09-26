@@ -14,16 +14,16 @@ import { SEO } from "@/components/SEO";
 const Index = () => (
   <div className="min-h-screen bg-cream overflow-x-hidden w-full">
     <SEO 
-      title="Prachi Shankar — Author, Consultant & MBA Student" 
-      description="Personal site of Prachi Shankar — author, MBA at SIBM Pune, Consulting Analyst at Accenture, IIIT Allahabad alumna. Essays, books, and insights." 
+      title="Prachi Shankar | Author, Consultant & MBA Student" 
+      description="Personal site of Prachi Shankar: author, MBA at SIBM Pune, Consulting Analyst at Accenture, IIIT Allahabad alumna. Essays, books, and insights." 
     />
     <Nav />
     <main className="overflow-x-hidden w-full">
       <Hero />
       <About />
+      <Books />
       <Education />
       <Experience />
-      <Books />
       <Volunteering />
       <Skills />
       <Journal />

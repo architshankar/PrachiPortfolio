@@ -5,7 +5,7 @@ export function Skills() {
   return (
     <section className="bg-cream py-28 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 mb-12">
-        <div className="label-eyebrow">06 — Skills</div>
+        <div className="label-eyebrow">06 · Skills</div>
         <h2 className="display-serif text-navy mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
           The toolkit, <span className="italic-accent">briefly.</span>
         </h2>

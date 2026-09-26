@@ -8,9 +8,11 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Blog from "./pages/Blog.tsx";
 import PostDetail from "./pages/PostDetail.tsx";
+import Reviews from "./pages/Reviews.tsx";
 import AdminLogin from "./pages/admin/AdminLogin.tsx";
 import AdminDashboard from "./pages/admin/AdminDashboard.tsx";
 import AdminEditor from "./pages/admin/AdminEditor.tsx";
+import AdminReviews from "./pages/admin/AdminReviews.tsx";
 
 const queryClient = new QueryClient();
 
@@ -25,10 +27,12 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<PostDetail />} />
+            <Route path="/reviews" element={<Reviews />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/new" element={<AdminEditor />} />
             <Route path="/admin/edit/:id" element={<AdminEditor />} />
+            <Route path="/admin/reviews" element={<AdminReviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

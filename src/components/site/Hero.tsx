@@ -71,7 +71,7 @@ export function Hero() {
         </div>
 
         
-        {/* QR — mobile */}
+        {/* QR (mobile) */}
         <div
           className="absolute bottom-6 right-4 z-30 p-1 cursor-pointer group"
           onClick={() => navigate("/blog")}
@@ -163,7 +163,7 @@ export function Hero() {
           />
         </div>
 
-        {/* QR — desktop */}
+        {/* QR (desktop) */}
         <div
           className="absolute bottom-12 right-6 md:bottom-20 md:right-16 z-40 hidden lg:block p-1 cursor-pointer group"
           onClick={() => navigate("/blog")}

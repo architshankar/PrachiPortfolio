@@ -10,7 +10,7 @@ export function Books() {
     <section id="books" className="bg-cream py-28">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="mb-14">
-          <div className="label-eyebrow">04 — Books & Honors</div>
+          <div className="label-eyebrow">02 · Books & Honors</div>
           <h2 className="display-serif text-navy mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
             Words on <span className="italic-accent">paper.</span><br />
             Voice on <span className="italic-accent">stage.</span>

@@ -7,14 +7,14 @@ export function Experience() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-8">
-            <div className="label-eyebrow">03 — Experience</div>
+            <div className="label-eyebrow">04 · Experience</div>
             <h2 className="display-serif text-navy mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
               Roles, <span className="italic-accent">rooms</span><br />and reasons.
             </h2>
           </div>
           <div className="md:col-span-4 flex items-end">
             <p className="text-navy/70">
-              A non-linear career — hardware to consulting, with stops at literary societies and parliamentary debates.
+              A non-linear career, from hardware to consulting, with stops at literary societies and parliamentary debates.
             </p>
           </div>
         </div>

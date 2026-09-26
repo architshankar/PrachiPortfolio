@@ -23,7 +23,7 @@ export function Contact() {
     }
     setSubmitting(true);
     setTimeout(() => {
-      toast.success("Message saved — Prachi will reach out soon.");
+      toast.success("Message saved. Prachi will reach out soon.");
       setForm({ name: "", email: "", message: "" });
       setSubmitting(false);
     }, 600);
@@ -33,12 +33,12 @@ export function Contact() {
     <section id="contact" className="navy-section py-28">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 grid md:grid-cols-2 gap-16">
         <div>
-          <div className="label-eyebrow">08 — Contact</div>
+          <div className="label-eyebrow">08 · Contact</div>
           <h2 className="display-serif mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
             Let's build<br />something<br /><span className="italic-accent">honest.</span>
           </h2>
           <p className="mt-8 text-cream/75 max-w-md leading-relaxed">
-            For collaborations on writing, speaking, consulting, or simply a note that says hello — my inbox is always open.
+            For collaborations on writing, speaking, consulting, or simply a note that says hello, my inbox is always open.
           </p>
           <div className="mt-10 space-y-4">
             <a href={`mailto:${profile.email}`} className="flex items-center gap-3 hover:text-gold transition">

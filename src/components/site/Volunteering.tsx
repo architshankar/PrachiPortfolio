@@ -7,14 +7,14 @@ export function Volunteering() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-14">
           <div className="md:col-span-8">
-            <div className="label-eyebrow">05 — Volunteering</div>
+            <div className="label-eyebrow">05 · Volunteering</div>
             <h2 className="display-serif mt-4" style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)" }}>
               The work that<br /><span className="italic-accent">never paid</span> in money.
             </h2>
           </div>
           <div className="md:col-span-4 flex items-end">
             <p className="text-cream/70">
-              Six chapters of student-led service — from teaching at Prayaas to organising TEDxIIITA.
+              Six chapters of student-led service, from teaching at Prayaas to organising TEDxIIITA.
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ export function Volunteering() {
               {v.note && <p className="text-cream/65 mt-4 text-sm leading-relaxed">{v.note}</p>}
               <div className="hairline border-cream/20 mt-auto pt-5 mb-3" />
               <div className="flex justify-between items-center">
-                <div className="label-eyebrow text-cream/55">{v.period || "—"}</div>
+                <div className="label-eyebrow text-cream/55">{v.period}</div>
                 <div className="label-eyebrow text-gold">{v.category}</div>
               </div>
             </div>
